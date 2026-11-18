@@ -66,7 +66,7 @@ function App() {
     "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/yLglTwyFOUZt5fNKm0PWL1PK5gm.jpg";
 
   return (
-    <div>
+    <div className="app-page">
       <section className="hero-section">
         {heroImage && (
           <>
