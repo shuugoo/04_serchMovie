@@ -147,119 +147,6 @@ body {
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.32);
 }
 
-@media (max-width: 700px) {
-  .app-page {
-    display: grid;
-    grid-template-areas:
-      "hero"
-      "search"
-      "movies";
-  }
-
-  .hero-section {
-    grid-area: hero;
-    height: 68svh;
-    min-height: 420px;
-    max-height: 600px;
-  }
-
-  .hero-section-bg {
-    object-fit: cover;
-  }
-
-  .hero-section-content {
-    width: 100%;
-    padding: 32px 20px;
-    gap: 16px;
-    box-sizing: border-box;
-  }
-
-  .hero-section-title {
-    font-size: clamp(2rem, 9vw, 2.8rem);
-    margin-bottom: 0;
-  }
-
-  .hero-section-overview {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
-    font-size: 1rem;
-    margin: 0;
-  }
-
-  .hero-section-actions {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .hero-section-btn {
-    flex: 1 1 130px;
-    justify-content: center;
-    padding: 12px 14px;
-  }
-
-  .app-header {
-    height: 56px;
-    padding: 0 1rem;
-  }
-
-  .app-title {
-    font-size: 1.6rem;
-    margin: 0;
-  }
-
-  .app-search-wrap {
-    grid-area: search;
-    width: 100%;
-    margin: 0;
-    padding: 1.25rem 1rem;
-  }
-
-  .app-search {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .movie-row-section {
-    grid-area: movies;
-    width: 100%;
-  }
-
-  .movie-row-title {
-    font-size: 1.07rem;
-    margin: 0 0 0.7rem;
-    padding: 0 1rem;
-  }
-
-  .movie-row-scroll {
-    gap: 0.75rem;
-    padding: 0 1rem 1.25rem;
-    scroll-snap-type: x mandatory;
-  }
-
-  .movie-card {
-    flex: 0 0 125px;
-    min-width: 0;
-    width: 125px;
-    height: 188px;
-    border-radius: 8px;
-    scroll-snap-align: start;
-  }
-
-  .movie-card__image {
-    border-radius: 8px;
-  }
-
-  .movie-card__title {
-    font-size: 0.95rem;
-  }
-
-  .movie-card__overlay {
-    padding: 0.5rem;
-  }
-}
-
 @media (hover: none) {
   .movie-card__overlay {
     opacity: 1;
@@ -382,4 +269,119 @@ body {
 .hero-section-btn-secondary:hover {
   background: #444;
   color: #fff;
+}
+
+@media (max-width: 700px) {
+  .app-page {
+    display: grid;
+    grid-template-areas:
+      "hero"
+      "search"
+      "movies";
+  }
+
+  .hero-section {
+    grid-area: hero;
+    height: 68svh;
+    min-height: 420px;
+    max-height: 600px;
+  }
+
+  .hero-section-bg {
+    object-fit: cover;
+    object-position: left center;
+  }
+
+  .hero-section-content {
+    width: 100%;
+    padding: 32px 24px;
+    gap: 16px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .hero-section-title {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+    margin-bottom: 0;
+  }
+
+  .hero-section-overview {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .hero-section-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-section-btn {
+    flex: 1 1 130px;
+    justify-content: center;
+    padding: 12px 14px;
+  }
+
+  .app-header {
+    height: 56px;
+    padding: 0 1rem;
+  }
+
+  .app-title {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .app-search-wrap {
+    grid-area: search;
+    width: 100%;
+    margin: 0;
+    padding: 1.25rem 1rem;
+  }
+
+  .app-search {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .movie-row-section {
+    grid-area: movies;
+    width: 100%;
+  }
+
+  .movie-row-title {
+    font-size: 1.07rem;
+    margin: 0 0 0.7rem;
+    padding: 0 1rem;
+  }
+
+  .movie-row-scroll {
+    gap: 0.75rem;
+    padding: 0 1rem 1.25rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .movie-card {
+    flex: 0 0 125px;
+    min-width: 0;
+    width: 125px;
+    height: 188px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+  }
+
+  .movie-card__image {
+    border-radius: 8px;
+  }
+
+  .movie-card__title {
+    font-size: 0.95rem;
+  }
+
+  .movie-card__overlay {
+    padding: 0.5rem;
+  }
 }
