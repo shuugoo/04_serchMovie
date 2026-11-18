@@ -58,12 +58,12 @@ function App() {
     fetchMovieList();
   }, [keyword]);
 
-  const heroTitle = "君の名は。";
+  const heroTitle = "ズートピア";
   const heroYear = 2016;
   const heroOverview =
-    "1,000年に1度のすい星来訪が、1か月後に迫る日本。山々に囲まれた田舎町に住む女子高生の三葉は、町長である父の選挙運動や、家系の神社の風習などに鬱屈（うっくつ）していた。それゆえに都会への憧れを強く持っていたが、ある日彼女は自分が都会に暮らしている少年になった夢を見る。夢では東京での生活を楽しみながらも、その不思議な感覚に困惑する三葉。一方、東京在住の男子高校生・瀧も自分が田舎町に生活する少女になった夢を見る。やがて、その奇妙な夢を通じて彼らは引き合うようになっていくが……。";
+    "肉食動物と草食動物が仲良く暮らせる世界。田舎で生まれ育ったウサギのジュディは警察学校を首席で卒業しウサギ初の警官として大都市「ズートピア」の警察署に配属されるが、駐車違反の取り締まりという平凡な任務を与えられたことを不満に思う。そんなジュディは詐欺師のキツネ、ニックと出会った後、カワウソが失踪した事件の捜査を担当することになったが、それは巨大な陰謀につながる大事件だった。";
   const heroImage =
-    "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/yLglTwyFOUZt5fNKm0PWL1PK5gm.jpg";
+    "https://media.themoviedb.org/t/p/w600_and_h900_face/oqlsQwZN1Umt9rX9t2LaN5RhwhX.jpg";
 
   return (
     <div className="app-page">
